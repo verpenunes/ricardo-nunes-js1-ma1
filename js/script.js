@@ -27,3 +27,39 @@ for (let i = 0; i < paragraphs.length; i++)  {
 }
 
 //question 6
+const resultsContainer = document.querySelector(".results");
+
+resultsContainer.innerHTML = "<p>New paragraph</p>";
+resultsContainer.style.background = "yellow";
+
+//question 7
+const cats = [
+    {
+        name: "Blob",
+        age: 10
+    },
+    {
+        name: "Harold",
+    },
+    {
+        name: "Blurt",
+        age: 21
+    }
+];
+
+function animal(list) {
+
+    for(let i = 0; i < list.length; i++){
+        console.log(list[i]);
+    }
+}
+
+animal(cats);
+
+//question 8
+function createCats(cats) {
+    for(let i = 0; i< cats.length; i++){
+        
+    }
+}
+
