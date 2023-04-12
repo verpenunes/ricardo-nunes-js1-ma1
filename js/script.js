@@ -58,8 +58,32 @@ animal(cats);
 
 //question 8
 function createCats(cats) {
-    for(let i = 0; i< cats.length; i++){
-        
+
+    let html = "";
+
+    for(let i = 0; i < cats.length; i++) {
+
+        let catAge = "Age unknown";
+
+        if (cats[i].age) {
+            catAge = cats[i].age;
+        }
+
+        html += `<div>
+                    <h5>Name: ${cats[i].name}</h5>
+                    <p>Age: ${catAge}<p>
+                </div>`;       
     }
+
+    return html;
 }
+
+const newHTML = createCats(cats);
+
+const container = document.querySelector(".cat-container");
+container.innerHTML = newHTML;
+
+
+
+
 
